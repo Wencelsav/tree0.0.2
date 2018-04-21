@@ -76,6 +76,7 @@ private:
 			if (this->key == key) {
 				return true;
 			}
+            return false;
 		}
 		auto operator==(node_t &source) const {
 			if ((left == nullptr&&source.left != left)|| (source.left == nullptr&&left != source.left)) {
