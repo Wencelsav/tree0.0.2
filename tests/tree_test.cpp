@@ -26,7 +26,8 @@ TEST_CASE("compare"){
     tree1.insert(9);
     tree1.insert(15);
     ostream<<(tree==tree1?"equal\n":"not equal\n");
-    REQUIRE("equal\nnot equal\n"==ostream.str());
+    ostream<<(tree.find(13)? "found succesfully\n":"not found\n");
+    REQUIRE("equal\nnot equal\nfound succesfully\n"==ostream.str());
 
 }
 

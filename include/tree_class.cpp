@@ -177,7 +177,7 @@ private:
 					
 				}
 
-
+             return false;
 			}
 
 
@@ -261,4 +261,5 @@ bool tree_t<T>::remove(T key)  {
 		
 		return false;
 	}
+    return false;
 }
