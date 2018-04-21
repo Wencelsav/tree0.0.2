@@ -78,10 +78,10 @@ private:
 			}
 		}
 		auto operator==(node_t &source) const {
-			if (left == nullptr&&source.left != left|| source.left == nullptr&&left != source.left) {
+			if ((left == nullptr&&source.left != left)|| (source.left == nullptr&&left != source.left)) {
 				return false;
 			}
-			if (right == nullptr&&source.right != right || source.right == nullptr&&right != source.right) {
+			if ((right == nullptr&&source.right != right) || (source.right == nullptr&&right != source.right)) {
 				return false;
 			}
 
